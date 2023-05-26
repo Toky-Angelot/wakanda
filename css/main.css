@@ -47,7 +47,6 @@ header {
     display: flex;
     position: sticky;
     top: 0px;
-
     flex-direction: row;
     justify-content: space-between;
     padding: 2em;
