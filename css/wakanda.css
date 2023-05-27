@@ -108,3 +108,15 @@
 #waka_article2 #waka_image{
     margin-top: 50px;
 }
+
+
+@media (max-width: 900px) {
+    #section2{
+        display: block;
+    }
+
+    #section3{
+        display: block;
+    }
+
+}

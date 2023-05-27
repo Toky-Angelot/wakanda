@@ -109,7 +109,7 @@ h4{
 }
 
 #reponse button{
-    margin-top: 50px;
+    margin-top: 20px;
     width: 100px;
     padding: 10px 0px;
     color: #021740;
@@ -117,7 +117,7 @@ h4{
     border: none;
     background-color: #debbe8f4;
     box-shadow: 1px 1px 20px #3d2da6;
-    margin-left: 100px;
+    margin-left: 130px;
 }
 
 #reponse button:hover{
@@ -143,3 +143,47 @@ h4{
     width: 400px;
 }
 
+@media (max-width: 700px) {
+    
+    #image_dora{
+        display: none;
+    }
+
+    #releve h3{
+        width: 250px;
+        margin-left: 50px;
+        text-align: left;
+    }
+
+    #descri{
+        margin-left: -75px;
+        background-image: none;
+        background: none;
+    }
+
+    #section_principale{
+        padding: 50px;
+    }
+
+    h2{
+        width: 400px;
+        font-size: large;
+        color: #9e91b7;
+        font-weight: 100;
+        letter-spacing: 10px;
+    }
+
+    #section_principale div{
+        display: block;
+    }
+
+    #savoir{
+        background-image: url(../assets/images/Enigme/Pantherenigme2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        right: 100px;
+        bottom: 120px;
+    }    
+    
+}
