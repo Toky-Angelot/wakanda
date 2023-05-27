@@ -43,7 +43,7 @@ html {
 
 header {
     z-index: 2;
-    background: linear-gradient(90deg, #0D121B,  #253451 );
+    background: linear-gradient(90deg, #0d121b, #253451);
     display: flex;
     position: sticky;
     top: 0px;
@@ -62,19 +62,36 @@ header {
         margin-inline: 2em;
     }
 }
+@media (max-width: 800px) {
+    .card-image {
+        display: none;
+    }
+    .card-content {
+        transform: none;
+        display: block;
+    }
+}
+
 .nav-item {
     font-family: beyno;
 }
+.nav-item.active {
+    text-decoration: underline;
+}
 
-.nav-item a{
+.nav-item.active a {
+    color: var(--gris);
+}
+
+.nav-item a {
     text-decoration: none;
     color: white;
     font-family: beyno;
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
     cursor: pointer;
-    color: var(--violet);
+    color: var(--gris);
     text-decoration: underline;
     transition: all 400ms ease-in-out;
 }
@@ -95,6 +112,10 @@ header {
     justify-content: space-evenly;
     align-items: center;
     overflow: hidden;
+}
+.banner.reverse {
+    flex-direction: row-reverse;
+    margin-inline: 10em;
 }
 
 .banner .banner-illustration {
@@ -124,6 +145,14 @@ h3 {
     margin-block-start: 64px;
     margin-block-end: 32px;
 }
+h3.titre {
+    /* margin-right: 1em; */
+    font-size: 50px;
+    text-align: justify;
+    text-align-last: justify;
+    margin-block: 0.1em !important;
+    padding-right: 1em;
+}
 
 .description {
     font-size: 13px;
@@ -131,16 +160,40 @@ h3 {
     margin-block: 24px;
     color: white;
     font-weight: 200;
+    text-align: justify;
 }
 
-#small_description{
+#small_description {
     font-size: 11px;
     font-family: Cantarell;
 }
 
-.description small{
+.description small {
     color: white;
     font-size: 13px;
+}
+.decoration {
+    background-image: url(../assets/images/Enigme/Pantherenigme2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10em; */
+    padding: 7em 9em;
+    /* padding-block: 4em; */
+    aspect-ratio: 16/5;
+    border: solid 1px red;
+}
+.decoration .description {
+    max-width: 50vw;
+    font-size:  small;
+    /* background-color: #9e91b7; */
+}
+banner.reverse .banner-img{
+    transform: scale(1.5);
 }
 
 .banner-img {
@@ -281,7 +334,6 @@ main {
     transform: scale(0.8);
     flex-shrink: 5;
     padding-inline: 5em;
-
 }
 .card {
     display: flex;
@@ -305,14 +357,14 @@ main {
 h5 {
     text-align: center;
     color: black;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
 }
 .btn-Card {
     background-color: var(--violet);
     color: white;
     border-radius: 3px;
     border: none;
-    padding: .5em .9em;
+    padding: 0.5em 0.9em;
     font-size: 10px;
 }
 .info {
@@ -321,47 +373,45 @@ h5 {
     color: #021740;
 }
 
-
 /*++++++++CONTACT+++++++++++++*/
-#contact{
+#contact {
     height: 800px;
     background-image: url(../assets/images/Accueil/Pantherhome7.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-
 }
 
-#contact #contenue_contact{
+#contact #contenue_contact {
     margin-top: 80px;
     padding: 50px 150px;
     border-radius: 150px;
     width: 500px;
     height: 430px;
-    background: linear-gradient(#fff , #ffffff15)
+    background: linear-gradient(#fff, #ffffff15);
 }
 
-#contact #contenue_contact div #sous_titre{
+#contact #contenue_contact div #sous_titre {
     text-align: center;
     font-family: Cantarell;
     font-size: small;
     color: #021740;
 }
 
-#contact #contenue_contact div #titre{
+#contact #contenue_contact div #titre {
     text-align: center;
     font-family: Cantarell;
     font-size: 36px;
     color: #021740;
 }
 
-#contact #contenue_contact #input{
+#contact #contenue_contact #input {
     display: flex;
     justify-content: center;
 }
 
-#contact #contenue_contact input{
+#contact #contenue_contact input {
     display: block;
     width: 300px;
     margin-top: 20px;
@@ -371,21 +421,21 @@ h5 {
     background-color: transparent;
 }
 
-#contact #contenue_contact input::placeholder{
+#contact #contenue_contact input::placeholder {
     color: #021740;
     font-size: small;
 }
 
-#contact #contenue_contact #input_message{
+#contact #contenue_contact #input_message {
     padding-bottom: 150px;
 }
 
-#contact button{
+#contact button {
     width: 100px;
     padding: 10px 0px;
     color: #021740;
     border-radius: 30px;
-    border: none; 
+    border: none;
     background-color: #debbe8f4;
     box-shadow: 1px 1px 20px #3d2da6;
     margin-top: 20px;
